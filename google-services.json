@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "48744302133",
+    "firebase_url": "https://culinary-experience-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "culinary-experience",
+    "storage_bucket": "culinary-experience.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48744302133:android:f29962bf54721a552d937c",
+        "android_client_info": {
+          "package_name": "com.example.culinaryexperience"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48744302133-o3tmusk18j9cb5ul8pkqb3lc4q5e2p03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSnJbc3n0jQvnadG6j2dQfvM7roV6VzXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48744302133-o3tmusk18j9cb5ul8pkqb3lc4q5e2p03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
