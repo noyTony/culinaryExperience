@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openNextActivity() {
-//        String sendName= name_et.getText().toString();
+        String sendName= name_et.getText().toString();
         Intent intent = new Intent(this, SecondActivity.class);
-//        intent.putExtra("sendingName",sendName);
+        intent.putExtra("sendingName",sendName);
         startActivity(intent);
     }
 }
