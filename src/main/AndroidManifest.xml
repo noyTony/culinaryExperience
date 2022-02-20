@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CulinaryExperience">
         <activity
-            android:name=".SecondActivity"
+            android:name=".StartersActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

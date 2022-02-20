@@ -10,21 +10,37 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText name_et;
+
     private Button main_btn;
+    private Button starters_btn;
+    private Button fish_btn;
+    private Button winged_creatures_btn;
+    private Button meat;
+    private Button vegan_vegetarian_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        name_et = findViewById(R.id.name_et);
         main_btn = findViewById(R.id.main_btn);
+        starters_btn = findViewById(R.id.starters_btn);
+        fish_btn = findViewById(R.id.fish_btn);
+        winged_creatures_btn = findViewById(R.id.winged_creatures_btn);
+        meat = findViewById(R.id.meat_btn);
+        vegan_vegetarian_btn = findViewById(R.id.vegan_vegetarian_btn);
 
         main_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                //to log out from app
-//               logOut();
-                openNextActivity();
+               logOut();
+            }
+        });
+
+        starters_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFStartersActivity();
             }
         });
     }
@@ -37,10 +53,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openNextActivity() {
-        String sendName= name_et.getText().toString();
-        Intent intent = new Intent(this, SecondActivity.class);
-        intent.putExtra("sendingName",sendName);
+    private void openFStartersActivity() {
+        Intent intent = new Intent(this, StartersActivity.class);
         startActivity(intent);
     }
+//    private void openFishActivity() {
+//        Intent intent = new Intent(this, FishActivity.class);
+//        startActivity(intent);
+//    }
+//    private void openWingedCreaturesActivity() {
+//        Intent intent = new Intent(this, WingedActivity.class);
+//        startActivity(intent);
+//    }
+//    private void openMeatActivity() {
+//        Intent intent = new Intent(this, MeatActivity.class);
+//        startActivity(intent);
+//    }
+//    private void openVeganVegetarianActivity() {
+//        Intent intent = new Intent(this, VeganVegetarianActivity.class);
+//        startActivity(intent);
+//    }
 }
